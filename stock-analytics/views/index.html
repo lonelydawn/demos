@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>股市行情分析</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+</head>
+<body>
+	<div class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<span class="glyphicon glyphicon-leaf"></span>&nbsp;&nbsp;股市行情分析</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a id="hzIndex" href="#">上证指数</a></li>
+					<li><a id="szIndex" href="#">深证成指</a></li>
+					<li><a id="zxIndex" href="#">中小板指</a></li>
+					<li><a id="cyIndex" href="#">创业板指</a></li>
+				</ul>
+				<div class="navbar-form navbar-left">
+					<div class="form-group">
+						<input id="stockCode" type="text" class="form-control" placeholder="请输入个股代码...">
+					</div>
+					<button id="searchStock" class="btn btn-info">查询</button>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</div>
+
+	<div class="container">
+		<div class="col-xs-12 col-md-10 col-md-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title" id="stockName"></h3>
+				</div>
+				<div class="panel-body">
+					<div class="col-xs-9">
+						<div class="row">
+							<div class="col-xs-4">
+								<select id="kInterval" class="form-control"></select>
+							</div>
+							<div class="col-xs-5 col-xs-offset-2" title="2017年10月1日则输入20171001,以此类推">
+								<div class="input-group">
+									<span class="input-group-addon">起始时间</span>
+									<input id="beginTime" type="date" class="form-control" 
+									placeholder="20171001">
+								</div>
+							</div>
+							<!-- <div class="col-xs-1" style="padding-left: 0px;">
+								<button id="beginTimeConfirm" class="btn btn-info">确定</button>
+							</div> -->
+						</div>
+						</br>
+						<div id="kGraph" class="graph-box">
+						</div>
+						<hr/>
+						<div class="row">
+							<div class="col-xs-4">
+								<select id="timeInterval" class="form-control"></select>
+							</div>
+						</div>
+						<br/>
+						<div id="timeGraph" class="graph-box">
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								行情报价
+							</div>
+							<div id="quotation" class="panel-body" style="font-size: .9em;">
+
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="javascripts/echarts.min.js"></script>
+	<script type="text/javascript" src="javascripts/index.js"></script>
+</body>
+</html>

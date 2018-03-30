@@ -1,0 +1,36 @@
+@media screen and (max-width: 600px){
+	.graph-box {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 1068px){
+	.graph-box {
+		height: 240px;
+	}
+}
+
+@media screen and (max-width: 1368px){
+	.graph-box {
+		height: 280px;
+	}
+}
+
+@media screen and (max-width: 1920px){
+	.graph-box {
+		height: 320px;
+	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+
+input[type="date"]{-moz-appearance:none !important;}
+
+#quotation .table-cell {
+	display: table-cell;
+	padding: 0 3px !important;
+}

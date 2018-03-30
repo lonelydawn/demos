@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chat Room</title>
+</head>
+<body>
+<div class="container">
+    <div class="chat-room">
+        <div class="send-to">
+            <h2>Send To</h2>
+            <ul id="contact" class="contact-list"></ul>
+        </div>
+        <div class="conversation">
+            <div class="header">
+                <label for="nickname">Name:</label>
+                <input id="nickname" type="text" placeholder="Pick a nickname."/>
+            </div>
+            <div class="dialog">
+                <div id="content" class="dialog-content"></div>
+                <div class="dialog-toolbox">
+                    <button class="btn-express cursor-forbid">☺</button>
+                </div>
+                <div class="dialog-input">
+                    <label for="msg"></label>
+                    <textarea id="msg"></textarea>
+                </div>
+                <div class="dialog-footer">
+                    <div class="copyright">
+                        <small>email - lonelydawn@sina.com</small>
+                    </div>
+                    <div class="btn-group">
+                        <button id="send" class="btn-send">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

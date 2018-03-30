@@ -1,0 +1,24 @@
+/**
+ * Created by lonelydawn on 2017-11-20.
+ */
+
+
+body {
+  margin: 0;
+}
+
+/* 设置滚动条样式 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(119, 119, 119, 0.7);
+}
